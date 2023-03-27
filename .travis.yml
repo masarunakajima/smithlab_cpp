@@ -1,0 +1,15 @@
+os:
+  - linux
+  - osx
+
+language: cpp
+
+compiler:
+  - g++
+  - clang
+
+script:
+  #- mkdir build && cd build
+  #- cmake ..
+  - make
+  - ctest --output-on-failure
