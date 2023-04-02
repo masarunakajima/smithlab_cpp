@@ -1,4 +1,4 @@
-image: ubuntu:latest
+image: gcc:latest
 
 # Define the stages for the pipeline
 stages:
