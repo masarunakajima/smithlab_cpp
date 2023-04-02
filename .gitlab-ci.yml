@@ -1,0 +1,16 @@
+image: ubuntu:latest
+
+# Define the stages for the pipeline
+stages:
+  - build
+
+# Define the build job
+build:
+  stage: build
+  script:
+    - apt-get update
+    #- apt-get -y install build-essential cmake
+    #- mkdir build
+    #- cd build
+    #- cmake ..
+    - make
